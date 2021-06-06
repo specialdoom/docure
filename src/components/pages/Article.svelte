@@ -3,6 +3,7 @@
 
   import ArticleService from "../../services/article.service";
   import { user } from "../../store/auth.store";
+  import RecentlyViewedLayout from "../RecentlyViewedLayout.svelte";
 
   const articleService = new ArticleService();
 
@@ -18,9 +19,12 @@
   });
 </script>
 
-{#await articleService.getArticle(id)}
-  Getting article
-{:then data}
-  {data.title}
-  {@html data.content}
-{/await}
+<RecentlyViewedLayout>
+  {#await articleService.getArticle(id)}
+  <docure-loading text="Getting article..." />
+  {:then data}
+    <docure-article title={data.title}>
+      {@html data.content}
+    </docure-article>
+  {/await}
+</RecentlyViewedLayout>

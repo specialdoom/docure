@@ -25,7 +25,7 @@
     "@specialdoom/docure-icon": "0.0.1",
     "@specialdoom/docure-list": "0.0.6",
     "@specialdoom/docure-loading": "0.0.1",
-    "@specialdoom/docure-recently-viewed": "0.0.1",
+    "@specialdoom/docure-recently-viewed": "0.0.4",
     "@specialdoom/docure-result": "0.0.1",
     "firebase": "^8.3.1",
     "sirv-cli": "^1.0.0",

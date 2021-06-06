@@ -9,6 +9,7 @@ import "@specialdoom/docure-icon";
 import "@specialdoom/docure-banner";
 import "@specialdoom/docure-list";
 import "@specialdoom/docure-recently-viewed";
+import "@specialdoom/docure-article";
 
 const app = new App({
   target: document.body,
