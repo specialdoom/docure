@@ -21,9 +21,9 @@
 
 <RecentlyViewedLayout>
   {#await articleService.getArticle(id)}
-  <docure-loading text="Getting article..." />
+    <docure-loading text="Getting article..." />
   {:then data}
-    <docure-article title={data.title}>
+    <docure-article title={data.title} workflow={data.workflowId}>
       {@html data.content}
     </docure-article>
   {/await}
