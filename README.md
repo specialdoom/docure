@@ -1,1 +1,12 @@
 # docure blog
+
+# How to run the app
+
+- firebase functions
+1. open a terminal
+2. cd functions
+3. npm run serve
+
+- app
+1. open another terminal
+2. npm run dev
